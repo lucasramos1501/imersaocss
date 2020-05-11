@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    height: 100vh;
+}
+
+.bg{    
+    height: 100vh;
+    background: url(images/bg.png);
+    background-size: 100vw 100vh;
+    filter: blur(4px);
+}
+
+header{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+}
+
+nav{
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu li{
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu a{
+    font-family: monospace;
+    font-size: 18px;
+    text-decoration: none;
+    list-style: none;
+    color: #262626;
+}
+
+.menu a:hover{
+   border-bottom: 1px solid #082126;
+}
+
+.site-title,
+.site-subtitle{
+    text-align: center;
+    font-family: monospace;
+    color: #262626;
+}
+
+
+
+
+
