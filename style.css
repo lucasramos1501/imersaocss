@@ -123,21 +123,21 @@ header{
     width: 350px;
 }
 
-@media (min-width: 580px){
+@media (max-width: 600px){
     .img-portfolio{
-        width: 450px;
-        width: 450px;
+        width: 300px;
+        width: 300px;
     }
 }
 
-@media (min-width: 300px){
+@media (max-width: 400px){
     .img-portfolio{
-        width: 250px;
-        width: 250px;
+        width: 220px;
+        width: 220px;
     }
 }
 
-@media (min-width: 200px){
+@media (max-width: 200px){
     .img-portfolio{
         width: 150px;
         width: 150px;
