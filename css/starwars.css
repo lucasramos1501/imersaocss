@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    box-sizing: border-box; 
+    font-size: 10px;
+    font-family: monospace;
+    font-size: 10px;
+    color: #fffb00;
+    background: url(../images/estrelas.png);
+    background-size: cover;
+}
+
+.star-wars{
+    perspective: 400px;
+}
+
+.crawl{
+    position: relative;
+    top: 0;
+    transform-origin: 50% 100%;
+    animation: crawl 60s linear;
+    text-align: center;
+    font-size: 3em;
+}
+
+@keyframes crawl {
+    from {
+      top: 0;
+      transform: rotateX(20deg) translateZ(0);
+    }
+    to { 
+      top: -6000px;
+      transform: rotateX(25deg) translateZ(-2500px);
+    }
+  }
