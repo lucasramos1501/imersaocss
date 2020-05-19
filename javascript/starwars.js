@@ -6,6 +6,6 @@ function tocarMusica() {
 tocarMusica();
 
 setInterval(() => {
-    window.location.href = "/home.html";
+    window.location.href = "/imersaocss/home.html";
 }, 12000);
 
