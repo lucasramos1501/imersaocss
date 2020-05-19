@@ -131,17 +131,34 @@ header{
 .sobre{
     text-align: justify;
     max-width:100vw;
+    height: 60vh;
     padding-left: 20%;
     padding-right: 15%;
-    font-size: 1em;
+    font-size: 1.1em;
     margin-top: 40px;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 800px){
     .sobre {
         padding-left: 10%;
         padding-right: 10%;
+        height: 40vh;
+    }
+}
+
+@media (max-width: 700px){
+    .sobre {
+        padding-left: 10%;
+        padding-right: 10%;
+        height: 40vh;
+    }
+}
+@media (max-width: 400px){
+    .sobre {
+        padding-left: 10%;
+        padding-right: 10%;
+        height: 70vh;
     }
 }
 
@@ -156,16 +173,18 @@ header{
     margin-left: 30px;
     margin-right: 30px;
     clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+    object-fit: cover;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 600px){
     .sobre .avatar img{
-       float: none;
-       width: 200px;
+       /*! float: none; */
+       width: 137px;
        height: 200px;
        text-align: center;
-       margin: 20px auto;
-       border-radius: 50%;
+       margin: 12px;
+       /*! border-radius: 50%; */
        clip-path: none;
     }
 }
@@ -177,7 +196,7 @@ header{
 .projetos{
     display: block;
     z-index: -1;
-    height: 100vh;
+    min-height: 80vh;
     padding: 0 0;
 }
 
@@ -185,10 +204,11 @@ header{
     display: grid;
     gap: 2em;
     grid-template-columns: 500px 500px;
+    grid-template-rows: 300px 300px;
     align-content: center;
     justify-content: center;
     max-width: 100vw;
-    margin-top: 40px;
+    margin-top: 120px;
 }
 
 @media (max-width: 900px){
@@ -198,17 +218,19 @@ header{
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 800px){
     .projetos .grid{
         grid-template-columns: 1fr;
-        gap: 2em;
+        gap: 0;
+        margin-top: 80px;
     }
 }
 
 .flip-card{
-    background-color: antiquewhite;
     perspective: 1500px;
     width: 420px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .flip-card:hover .card{
@@ -247,15 +269,12 @@ header{
 .card-front,
 .card-back{
     position: absolute;
-    top: 0;
-    left: 0;
     backface-visibility: hidden;
 }
 
 .card-back{
     width:  100%;
     height: 320px;
-    /*! padding: 10%; */
     background-color: #082126;
     color: #fff;
     font-size: 1.2em;
@@ -353,6 +372,7 @@ figcaption{
     padding: 0 15%;
     background: #082126;
     color: #fff; 
+    margin-top: 180px;
 }
 
 .contato .area-title{
@@ -374,6 +394,8 @@ figcaption{
 
 @media (max-width: 400px){
     .contato{
+        margin-top: 80px;
         height: 15vh;
+
     }
 }
