@@ -1,4 +1,4 @@
 setInterval(()=>{
-    window.location.href = "/starwars.html";
+    window.location.href = "/imersaocss/starwars.html";
 }, 3000);
 
